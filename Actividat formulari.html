@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <title>TechFix Manteniment - Gestió d'Incidències</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <div class="logo">
+              <img src="https://techfix.es/wp-content/uploads/2025/06/Logo_tech_fix-removebg-preview1.png">  <span class="logo-icon">⚙️</span>
+                <h1>Tech<span>Fix</span> Manteniment</h1>
+            </div>
+            <div class="empresa-info">
+                <p>Carrer de la Tecnologia, 42, 08001 Barcelona | NIF: B-12345678</p>
+                <p>📞 93 456 78 90 | ✉️ suport@techfix.cat</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inici</a></li>
+                <li><a href="#">Tarifes</a></li>
+                <li><a href="#">Qui som</a></li>
+                <li><a href="#">Contacte</a></li>
+                <li><a href="#formulari" class="btn-nav">Envia la teva incidència</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="formulari" class="container">
+            <h2>Envia la teva incidència</h2>
+            <p>Si us plau, omple les dades tècniques per a una diagnosi ràpida.</p>
+
+            <form action="#">
+                <fieldset>
+                    <legend>Dades del Client</legend>
+                    <div class="grid">
+                        <input type="text" placeholder="Nom complet" required>
+                        <input type="email" placeholder="Correu electrònic" required>
+                        <input type="tel" placeholder="Telèfon de contacte" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Identificació de l'Equip</legend>
+                    <div class="grid">
+                        <input type="text" placeholder="Marca i Model" required>
+                        <select required>
+                            <option value="" disabled selected>Sistema Operatiu</option>
+                            <option value="windows">Windows</option>
+                            <option value="linux">Linux</option>
+                            <option value="macos">macOS</option>
+                        </select>
+                        <select required>
+                            <option value="" disabled selected>Tipus d'equip</option>
+                            <option value="sobretaula">Sobretaula</option>
+                            <option value="portatil">Portàtil</option>
+                            <option value="servidor">Servidor</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Components afectats (Selecció múltiple)</legend>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="comp" value="disc"> Disc dur</label>
+                        <label><input type="checkbox" name="comp" value="ram"> Memòria RAM</label>
+                        <label><input type="checkbox" name="comp" value="cpu"> CPU / Processador</label>
+                        <label><input type="checkbox" name="comp" value="font"> Font d'alimentació</label>
+                        <label><input type="checkbox" name="comp" value="pantalla"> Pantalla / Monitor</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Descripció de l'Avaria</legend>
+                    <textarea rows="3" placeholder="Símptomes (Què fa l'equip?)" required></textarea>
+                    <textarea rows="2" placeholder="Senyals acústics (beeps) o missatges d'error"></textarea>
+                    <input type="text" placeholder="Darrera acció realitzada abans de l'error">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Nivell d'Urgència</legend>
+                    <div class="radio-group">
+                        <label class="u-baixa"><input type="radio" name="urgencia" value="baixa"> Baixa</label>
+                        <label class="u-mitjana"><input type="radio" name="urgencia" value="mitjana"> Mitjana</label>
+                        <label class="u-alta"><input type="radio" name="urgencia" value="alta" required> Alta (Crítica)</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn-submit">Enviar Tiquet de Suport</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Xarxes Socials</h4>
+                <div class="socials">
+                    <span>[LinkedIn]</span> <span>[Twitter/X]</span> <span>[Instagram]</span>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Horari d'atenció</h4>
+                <p>Dilluns a Divendres: 09:00h - 19:00h</p>
+                <p>Dissabtes: 10:00h - 14:00h</p>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Política de Privacitat</a> | <a href="#">Avís Legal</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 TechFix Manteniment - Tots els drets reservats.
+        </div>
+    </footer>
+
+</body>
+</html>
